@@ -1,7 +1,7 @@
 
 api:
-  key: 4P0xIsuOQIRoGEQBvs0ZJJyEuxpYi38G
-  url: "https://api.apilayer.com/exchangerates_data/convert"
+  key: ${API_KEY:4P0xIsuOQIRoGEQBvs0ZJJyEuxpYi38G}
+  url: ${API_URL:https://api.apilayer.com/exchangerates_data/convert}
 
 server:
   port: 8008

@@ -1,0 +1,16 @@
+###
+GET http://localhost:8008/api/currency/exchange?to=eur&from=bob&amount=20000
+
+
+#### USER
+GET http://localhost:8008/api/currency/user
+Authorization: Basic user user
+
+#### ADMIN
+GET http://localhost:8008/api/currency/admin
+Authorization: Basic admin admin
+
+
+#### ADMIN
+GET http://localhost:8008/api/currency/principal
+Authorization: Basic admin admin
