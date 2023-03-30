@@ -17,3 +17,22 @@ spring:
       ddl-auto: update
   application:
     name: currency-converter
+
+keycloak:
+  auth-server-url: http://localhost:8080
+  autodetect-bearer-only: true
+  credentials:
+    secret: dH8SLOVQIus1f703zsbsRLBbGLY9crlk
+  realm: software
+  resource: backend
+  ssl-required: external
+  use-resource-role-mappings: false
+  security-constraints:
+    - auth-roles:
+        - ADMIN
+      security-collections:
+        - name: SERVICIOS DEL ADMINISTRADOR
+          methods:
+            - GET
+          patterns:
+            - /api/currency/*

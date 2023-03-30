@@ -28,7 +28,7 @@ services:
 #    depends_on:
 #      - postgres
 #  angular:
-#    image: angular-software:4.0.0-docker
+#    image: angular-software:0.2.0-docker
 #    ports:
 #      - "4200:80"
 #    volumes:
